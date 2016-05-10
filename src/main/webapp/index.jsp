@@ -34,7 +34,7 @@
                         Already an eMetering user?
                         <br /> Log in below.
                     </div>
-                    <form method="POST" name="emeterLoginForm" id="emeterLoginForm" action="/">
+                    <form method="POST" name="emeterLoginForm" id="emeterLoginForm" action="/emetering/login">
                         <div class="sidebarstd">
                             <b>User ID</b>
                             <input type="text" name="UserID" id="UserID" />
@@ -44,11 +44,7 @@
                             <input type="password" name="password" id="password" />
                         </div>
                         <div class="sidebarstd" align="right">
-                            <!-- 		<input name="request" type="submit" class="submitCancel"
-								id="ajax" value="Login" /><br />  -->
-                            <!--                                                        <input type="button" id="loginButton" value="Login" onclick="callOtherDomain()" />-->
-                            <input type="button" id="loginButton" value="Login" />
-
+                            <input type="submit" id="loginButton" value="Submit" />
                             <br>
                         </div>
                         <input type="hidden" name="width" />
@@ -105,59 +101,5 @@
     <!-- /end #bodyWrapper -->
     </div>
 </body>
-<script>
-    var form_data;
-    $(document).ready(function () {
-        $("#loginButton").click(function () {
-            makeCorsRequest();
-        });
-    });
-
-    //   
-    // Create the XHR object.
-    function createCORSRequest(method, url) {
-        var xhr = new XMLHttpRequest();
-        if ("withCredentials" in xhr) {
-            // XHR for Chrome/Firefox/Opera/Safari.
-            xhr.open(method, url, true);
-        } else if (typeof XDomainRequest != "undefined") {
-            // XDomainRequest for IE.
-            xhr = new XDomainRequest();
-            xhr.open(method, url);
-        } else {
-            // CORS not supported.
-            xhr = null;
-        }
-        xhr.setRequestHeader('Access-Control-Request-Headers', 'origin, content-type, Accept');
-        return xhr;
-    }
-
-
-    // Make the actual CORS request.
-    function makeCorsRequest() {
-        form_data = new FormData($('#emeterLoginForm')[0]);
-
-        // All HTML5 Rocks properties support CORS.
-        var url = 'https://kdcbchemdrweb2.bchydro.bc.ca/eMeterRestWebApi/api/DemandResponseIsUser';
-
-        var xhr = createCORSRequest('POST', url);
-        if (!xhr) {
-            alert('CORS not supported');
-            return;
-        }
-
-        // Response handlers.
-        xhr.onload = function () {
-            var text = xhr.responseText;
-            alert('Response from CORS request to ' + text);
-        };
-
-        xhr.onerror = function () {
-            alert('Woops, there was an error making the request.');
-        };
-
-        xhr.send(form_data);
-    }
-</script>
 
 </html>

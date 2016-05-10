@@ -1,0 +1,321 @@
+BODY {
+	HEIGHT: 400px
+}
+#header_project_points {
+	FONT-SIZE: 11px; COLOR: #000; PADDING-BOTTOM: 6px; TEXT-ALIGN: right; PADDING-TOP: 6px; PADDING-LEFT: 14px; MARGIN: 0px; PADDING-RIGHT: 6px
+}
+#header_project_points .upper {
+	TEXT-TRANSFORM: uppercase
+}
+#progress {
+	WIDTH: 185px; BORDER-BOTTOM: #ccc 0px dotted; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+#progress OL {
+	LIST-STYLE-TYPE: decimal; BACKGROUND: #fff; LIST-STYLE-POSITION: outside; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+#progress OL {
+	COLOR: #000
+}
+UL #progress OL LI A {
+	COLOR: #000
+}
+UL #progress OL LI.bcBold {
+	COLOR: #000
+}
+#progress OL LI {
+	BORDER-TOP: #ccc 0px dotted; PADDING-BOTTOM: 6px; PADDING-TOP: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; TEXT-INDENT: 10px
+}
+DIV#progress OL LI A {
+	LIST-STYLE-TYPE: decimal; LIST-STYLE-POSITION: outside; MARGIN-LEFT: 28px; DISPLAY: block
+}
+#progress UL.bctier1 LI {
+	BACKGROUND: #fff
+}
+.sidebarstd2 {
+	MARGIN: 0px
+}
+#progress OL LI.sidebarstd2 {
+	COLOR: #999
+}
+#progress OL LI.bcBold {
+	COLOR: #000
+}
+DIV#progress OL LI.sidebarstd2 {
+	PADDING-BOTTOM: 6px; PADDING-TOP: 6px; PADDING-LEFT: 0px; MARGIN-LEFT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 10px
+}
+#Application {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#Application UL LI {
+	FONT-SIZE: 12px
+}
+#Application OL LI {
+	FONT-SIZE: 12px; LINE-HEIGHT: 150%
+}
+#Application .orangeBorder {
+	BORDER-TOP: #ed0c6e 2px solid; BORDER-RIGHT: #ed0c6e 2px solid; BORDER-BOTTOM: #ed0c6e 2px solid; COLOR: #333333; BORDER-LEFT: #ed0c6e 2px solid
+}
+#Application .orangeBorder UL {
+	
+}
+#Application .orangeBorder UL LI {
+	BACKGROUND: none transparent scroll repeat 0% 0%; LIST-STYLE-IMAGE: url(../../image/bullet_red.gif)
+}
+#Application .hr {
+	BORDER-TOP: #cccccc 1px solid; WIDTH: 100%
+}
+UNKNOWN {
+	DISPLAY: inline
+}
+#sideNav FORM INPUT {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H2 {
+	MARGIN-BOTTOM: 10px
+}
+.searchbox {
+	FONT-SIZE: 11px; BORDER-TOP: #000066 1px solid; FONT-FAMILY: arial,helvetica,geneva,sans-serif; BORDER-RIGHT: #000066 1px solid; WIDTH: 100px; BORDER-BOTTOM: #000066 1px solid; COLOR: #000066; BORDER-LEFT: #000066 1px solid; BACKGROUND-COLOR: #e6f3f8
+}
+.inputbox {
+	FONT-SIZE: 11px; BORDER-TOP: #000066 1px solid; FONT-FAMILY: arial,helvetica,geneva,sans-serif; BORDER-RIGHT: #000066 1px solid; BORDER-BOTTOM: #000066 1px solid; COLOR: #000066; BORDER-LEFT: #000066 1px solid; BACKGROUND-COLOR: #e6f3f8
+}
+.submitbutt {
+	FONT-SIZE: 10px; BORDER-TOP: #000066 1px solid; FONT-FAMILY: arial,helvetica,geneva,sans-serif; BORDER-RIGHT: #000066 1px solid; BORDER-BOTTOM: #000066 1px solid; COLOR: #000066; BORDER-LEFT: #000066 1px solid; BACKGROUND-COLOR: #a5cd91
+}
+.submitbuttblue {
+	FONT-SIZE: 11px; BORDER-TOP: #006600 1px solid; FONT-FAMILY: arial,helvetica,geneva,sans-serif; BORDER-RIGHT: #006600 1px solid; BORDER-BOTTOM: #006600 1px solid; FONT-WEIGHT: bold; COLOR: #ffffff; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 3px; BORDER-LEFT: #006600 1px solid; PADDING-RIGHT: 3px; BACKGROUND-COLOR: #006600
+}
+.buttonSmall {
+	WIDTH: 70px
+}
+#Application .buttonSmall {
+	WIDTH: 70px
+}
+#Application .buttonssDisabled {
+	FONT-SIZE: 12px; BORDER-TOP: #ccc 1px solid; FONT-WEIGHT: bold; COLOR: #ffffff; PADDING-BOTTOM: 1px; TEXT-ALIGN: center; PADDING-TOP: 1px
+}
+DIV.arrow {
+	MARGIN-TOP: 11px
+}
+DIV.item {
+	FONT-SIZE: 12px; MARGIN-TOP: 8px; MARGIN-RIGHT: 5px
+}
+.blurb {
+	FONT-SIZE: 12px; MARGIN: 15px 15px 0px
+}
+.homepagelargetext {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #333333; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-LEFT: 1px; PADDING-RIGHT: 1px
+}
+.homepagesmalltext {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #333333; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-LEFT: 1px; PADDING-RIGHT: 1px
+}
+A.left {
+	TEXT-DECORATION: underline; COLOR: #333333
+}
+A.left:hover {
+	TEXT-DECORATION: underline; COLOR: #666666
+}
+A.residential {
+	TEXT-DECORATION: underline; COLOR: #339900
+}
+A.residential:hover {
+	TEXT-DECORATION: underline; COLOR: #336600
+}
+A.business {
+	TEXT-DECORATION: underline; COLOR: #3399cc
+}
+A.business:hover {
+	TEXT-DECORATION: underline; COLOR: #336699
+}
+.breadcrumb {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold; COLOR: #000066; MARGIN: 8px 14px; BACKGROUND-COLOR: transparent
+}
+.breadcrumb A {
+	TEXT-DECORATION: none; COLOR: #000066
+}
+.breadcrumb A:hover {
+	TEXT-DECORATION: underline; COLOR: #000066
+}
+.breadcrumbsub {
+	COLOR: #4c98da; BACKGROUND-COLOR: transparent
+}
+.content {
+	MARGIN: 12px 22px
+}
+.xcontent {
+	MARGIN: 12px 22px
+}
+P.leftblurb {
+	FONT-SIZE: 11px; MARGIN: 2px 5px 16px 7px
+}
+.leftblurb P {
+	FONT-SIZE: 11px; MARGIN: 2px 5px 16px 7px
+}
+.leftquote {
+	FONT-SIZE: 16px; FONT-WEIGHT: bold; COLOR: #4c98da; MARGIN: 2px 10px; LINE-HEIGHT: 24px; BACKGROUND-COLOR: transparent
+}
+.sidenav {
+	BORDER-BOTTOM: #ccc 1px dotted
+}
+.sidenavbkg {
+	COLOR: #333333; BACKGROUND-COLOR: #dedede
+}
+.sidenavsubactive {
+	FONT-WEIGHT: bold; COLOR: #333333; DISPLAY: block; BACKGROUND-COLOR: #ffffff
+}
+DIV.sidenavcontainer {
+	FONT-SIZE: 11px; COLOR: #333333; PADDING-BOTTOM: 10px; PADDING-TOP: 5px; PADDING-LEFT: 17px; LINE-HEIGHT: 150%; PADDING-RIGHT: 10px
+}
+DIV.sidenavcontainer A {
+	COLOR: #333333
+}
+.sidebarbkg {
+	COLOR: #333333; BACKGROUND-COLOR: #dedede
+}
+.sidebarblurb {
+	FONT-SIZE: 10px; MARGIN: 5px
+}
+.sidebarstd P {
+	FONT-SIZE: 10px
+}
+.sidebarstd {
+	FONT-SIZE: 11px; MARGIN: 7px 5px 5px 17px
+}
+.sidebarstdNActive {
+	FONT-SIZE: 11px; COLOR: #999; MARGIN: 7px 5px 5px 17px
+}
+.section-sidebarstd {
+	FONT-SIZE: 11px; MARGIN: 2px 5px 16px 7px
+}
+.section-sidebarstd P {
+	FONT-SIZE: 11px
+}
+.level4 {
+	FONT-SIZE: 11px; BORDER-BOTTOM: #ccc 1px dotted; PADDING-LEFT: 10px
+}
+.level5 {
+	FONT-SIZE: 11px; BORDER-BOTTOM: #ccc 1px dotted; PADDING-LEFT: 20px
+}
+.level6 {
+	FONT-SIZE: 11px; PADDING-LEFT: 30px
+}
+.pad25 {
+	MARGIN: 25px 0px
+}
+.title {
+	FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.smalltext {
+	FONT-SIZE: 11px
+}
+.whitetext {
+	COLOR: #ffffff
+}
+.redtext {
+	COLOR: #ff0000
+}
+.whitebold {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #ffffff
+}
+A.whitebold {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #ffffff
+}
+A.whitebold:hover {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #0033ff
+}
+A.whitebold:visited {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #000099
+}
+.headingtitle {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #333333; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; DISPLAY: block; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #cccccc
+}
+.contentcell {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: normal; COLOR: #000066; MARGIN: 4px 10px
+}
+.contentcell2 {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #ffffff; MARGIN: 2px
+}
+.contentcell2 A {
+	COLOR: #ffffff
+}
+.contentcell3 {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: normal; COLOR: #333333; MARGIN: 2px
+}
+.contentcell4 {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #333333; MARGIN: 2px
+}
+.contentcell5 {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: bold; COLOR: #000066; MARGIN: 2px
+}
+.contentcell6 {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: normal; COLOR: #333333; MARGIN: 2px
+}
+.contentcell7 {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: normal; COLOR: #ffffff; MARGIN: 4px 5px
+}
+.contentcell8 {
+	FONT-SIZE: 12px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: normal; COLOR: #333333; MARGIN: 2px
+}
+.contentcell9 {
+	FONT-SIZE: 12px; MARGIN: 2px; BACKGROUND-COLOR: #e6f3f8
+}
+.table1 {
+	BACKGROUND-COLOR: #cccccc
+}
+.contentb {
+	MARGIN: 10px
+}
+.contentc {
+	MARGIN: 5px
+}
+.contentd {
+	MARGIN: 15px
+}
+.buttpad {
+	MARGIN: 1px 0px 0px 1px
+}
+.section-body {
+	MARGIN: 5px 5px 5px 10px
+}
+.popup {
+	MARGIN: 0px
+}
+.popupheader {
+	HEIGHT: 15px
+}
+.popupfooter {
+	FONT-SIZE: 11px; HEIGHT: 15px; FONT-FAMILY: arial,helvetica,geneva,sans-serif; FONT-WEIGHT: normal; COLOR: #ffffff; PADDING-LEFT: 5px
+}
+.errormsg {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+#flashcontent {
+	WIDTH: 374px; POSITION: relative; MARGIN-TOP: 10px
+}
+#galleryMessage {
+	HEIGHT: 63px; WIDTH: 310px; BACKGROUND-IMAGE: url(/galleries/images/global/download_flash_background.png); BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TEXT-ALIGN: center; LEFT: 30px; TOP: 50px
+}
+.message {
+	BORDER-TOP: #a6cced 1px solid; BORDER-RIGHT: #a6cced 1px solid; BORDER-BOTTOM: #a6cced 1px solid; BORDER-LEFT: #a6cced 1px solid; BACKGROUND-COLOR: #dbeaf8
+}
+.orangeBorder {
+	BORDER-TOP: #ed0c6e 2px solid; BORDER-RIGHT: #ed0c6e 2px solid; BACKGROUND-REPEAT: no-repeat; BORDER-BOTTOM: #ed0c6e 2px solid; COLOR: #000; BORDER-LEFT: #ed0c6e 2px solid
+}
+.orangeBorder UL LI {
+	BACKGROUND: none transparent scroll repeat 0% 0%; LIST-STYLE-IMAGE: url(../../image/bullet_red.gif)
+}
+#sideNav UL LI.highlighted {
+	PADDING-BOTTOM: 0px
+}
+#sideNav UL UL {
+	MARGIN-TOP: 6px
+}
+
+DIV#header {
+	HEIGHT: 90px; BACKGROUND: #10A3C8; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 20px; PADDING-RIGHT: 10px; background-clip: border-box; background-origin: padding-box; background-size: auto auto
+}
+
+#bodyWrapper #bcExtra {
+	HEIGHT: 10px; BACKGROUND: #10A3C8; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; CLEAR: both; DISPLAY: block; PADDING-RIGHT: 10px
+}
+
