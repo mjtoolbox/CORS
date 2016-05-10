@@ -47,9 +47,9 @@
                             <input type="submit" id="loginButton" value="Submit" />
                             <br>
                         </div>
-                        <input type="hidden" name="width" />
-                        <input type="hidden" name="height" />
-                        <input type="hidden" name="browser" />
+                        <%--<input type="hidden" name="width" />--%>
+                        <%--<input type="hidden" name="height" />--%>
+                        <%--<input type="hidden" name="browser" />--%>
                     </form>
                     <div id="demo"></div>
                 </div>
