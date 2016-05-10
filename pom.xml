@@ -27,66 +27,7 @@
             <version>6.0</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.glassfish.ha</groupId>
-            <artifactId>ha-api</artifactId>
-            <version>3.1.9</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.gmbal</groupId>
-            <artifactId>gmbal-api-only</artifactId>
-            <version>3.1.0-b001</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
-            <version>2.2.10</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
-            <version>2.2.10</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.xml.ws</groupId>
-            <artifactId>jaxws-api</artifactId>
-            <version>2.2.11</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>jaxws-rt</artifactId>
-            <version>2.2.8</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.external</groupId>
-            <artifactId>management-api</artifactId>
-            <version>3.1.0-b001</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>policy</artifactId>
-            <version>2.5</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jvnet.staxex</groupId>
-            <artifactId>stax-ex</artifactId>
-            <version>1.7.7</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.stream.buffer</groupId>
-            <artifactId>streambuffer</artifactId>
-            <version>1.5.3</version>
-            <scope>provided</scope>
-        </dependency>
+
 
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -99,7 +40,7 @@
 
     <build>
         <!-- final name will overwrite WAR file name-->
-        <finalName>eMetering</finalName>
+        <finalName>${build.warname}</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -151,6 +92,23 @@
                     <!-- encoding>UTF-8</encoding -->
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <filtering>true</filtering>
+                            <directory>src/main/webapp</directory>
+                            <includes>
+                                <include>*.html</include>
+                            </includes>
+                        </resource>
+                    </webResources>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+                </configuration>
+            </plugin>
 
             <!-- To use the plugin goals in your POM or parent POM -->
             <plugin>
@@ -168,6 +126,40 @@
 
         </plugins>
     </build>
+
+    <!-- Change properties value based on Environment -->
+    <profiles>
+        <profile>
+            <id>local</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <build.warname>${project.artifactId}-${project.version}-DEV</build.warname>
+                <webapi.url>http://localhost:8080/emetering/login</webapi.url>
+                <eMeter.url>http://w3t3:7002/emeter/adminLogin.html</eMeter.url>
+                <dr.url>https://localhost:44301/home/login?guid=</dr.url>
+            </properties>
+        </profile>
+        <profile>
+            <id>ua</id>
+            <properties>
+                <build.warname>${project.artifactId}-${project.version}-UA</build.warname>
+                <webapi.url>http://localhost:8080/emetering/login</webapi.url>
+                <eMeter.url>http://w3t3:7002/emeter/adminLogin.html</eMeter.url>
+                <dr.url>https://localhost:44301/home/login?guid=</dr.url>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <build.warname>${project.artifactId}-${project.version}-PROD</build.warname>
+                <webapi.url>http://localhost:8080/emetering/login</webapi.url>
+                <eMeter.url>http://w3t3:7002/emeter/adminLogin.html</eMeter.url>
+                <dr.url>https://localhost:44301/home/login?guid=</dr.url>
+            </properties>
+        </profile>
+    </profiles>
 
 
     <repositories>
