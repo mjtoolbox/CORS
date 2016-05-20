@@ -137,16 +137,16 @@
             <properties>
                 <build.warname>${project.artifactId}-${project.version}-DEV</build.warname>
                 <webapi.url>http://localhost:8080/emetering/login</webapi.url>
-                <eMeter.url>http://w3t3:7002/emeter/adminLogin.html</eMeter.url>
-                <dr.url>https://localhost:44301/home/login?guid=</dr.url>
+                <eMeter.url></eMeter.url>
+                <dr.url></dr.url>
             </properties>
         </profile>
         <profile>
             <id>ua</id>
             <properties>
                 <build.warname>${project.artifactId}-${project.version}-UA</build.warname>
-                <webapi.url>http://localhost:8080/emetering/login</webapi.url>
-                <eMeter.url>http://w3t3:7002/emeter/adminLogin.html</eMeter.url>
+                <webapi.url></webapi.url>
+                <eMeter.url></eMeter.url>
                 <dr.url>https://localhost:44301/home/login?guid=</dr.url>
             </properties>
         </profile>
@@ -155,8 +155,8 @@
             <properties>
                 <build.warname>${project.artifactId}-${project.version}-PROD</build.warname>
                 <webapi.url>http://localhost:8080/emetering/login</webapi.url>
-                <eMeter.url>http://w3t3:7002/emeter/adminLogin.html</eMeter.url>
-                <dr.url>https://localhost:44301/home/login?guid=</dr.url>
+                <eMeter.url></eMeter.url>
+                <dr.url></dr.url>
             </properties>
         </profile>
     </profiles>
