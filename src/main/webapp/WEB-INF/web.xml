@@ -6,5 +6,13 @@
 
     <display-name>eMetering</display-name>
 
+ <servlet>
+        <servlet-name>HandlerServlet</servlet-name>
+        <servlet-class>com.emetering.HandlerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandlerServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
 
 </web-app>
